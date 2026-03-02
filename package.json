@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "cross-env BASE_PATH=/ astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -12,6 +12,8 @@
     "astro": "^5.17.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.4"
+    "@biomejs/biome": "2.4.4",
+    "@types/node": "^25.3.3",
+    "cross-env": "^10.1.0"
   }
 }
